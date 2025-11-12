@@ -1,0 +1,304 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  font-family: 'Press Start 2P', cursive; /* optional Minecraft-style font */
+  background-color: #a2d149; /* grassy green */
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  padding: 50px;
+  border: 4px solid #000;
+  box-shadow: 8px 8px 0 #888888;
+  background-color: #fff;
+  width: 400px;
+  margin: 100px auto;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #1e90ff;
+  border: 2px solid #000;
+  box-shadow: 4px 4px 0 #888;
+}
+
+.btn:hover {
+  background-color: #63b3ed;
+}
+.create-page {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.create-page h2 {
+  color: #2e7d32;
+  font-family: "Press Start 2P", cursive;
+  margin-bottom: 20px;
+}
+
+.create-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.create-form input,
+.create-form select {
+  width: 250px;
+  padding: 8px;
+  border: 3px solid #4e342e;
+  border-radius: 6px;
+  background-color: #d7ccc8;
+  font-family: "Press Start 2P", cursive;
+  font-size: 10px;
+}
+
+.create-form button {
+  background-color: #388e3c;
+  color: #fff;
+  font-family: "Press Start 2P", cursive;
+  font-size: 10px;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.create-form button:hover {
+  background-color: #2e7d32;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.crewmate-card {
+  border: 4px solid #3e2723;
+  border-radius: 8px;
+  background: #a1887f;
+  width: 220px;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 4px 4px 0 #4e342e;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.crewmate-card:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.crewmate-figure img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+  image-rendering: pixelated; /* Makes it look retro like Minecraft */
+}
+
+.crewmate-card h3 {
+  margin: 5px 0;
+  font-family: "Press Start 2P", cursive;
+  font-size: 10px;
+  color: #ffeb3b;
+}
+
+.crewmate-card p {
+  margin: 3px 0;
+  font-size: 12px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #1b5e20, #2e7d32);
+  padding: 10px 20px;
+  color: #fff;
+  border-bottom: 4px solid #3e2723;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+  font-family: "Press Start 2P", cursive; /* Optional Minecraft-like font */
+}
+
+.navbar h2 {
+  margin: 0;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.nav-links a {
+  color: #ffeb3b;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+  text-shadow: 0px 0px 5px #ffeb3b;
+}
+.edit-btn {
+  background-color: #ffb300;
+  border: none;
+  color: #000;
+  font-family: "Press Start 2P", cursive;
+  font-size: 9px;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.edit-btn:hover {
+  background-color: #ffa000;
+}
+
+.edit-page {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.edit-page h2 {
+  color: #2e7d32;
+  font-family: "Press Start 2P", cursive;
+  margin-bottom: 20px;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.edit-form input,
+.edit-form select {
+  width: 250px;
+  padding: 8px;
+  border: 3px solid #4e342e;
+  border-radius: 6px;
+  background-color: #d7ccc8;
+  font-family: "Press Start 2P", cursive;
+  font-size: 10px;
+}
+
+.edit-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.save-btn {
+  background-color: #388e3c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-family: "Press Start 2P", cursive;
+  font-size: 9px;
+  cursor: pointer;
+}
+
+.save-btn:hover {
+  background-color: #2e7d32;
+}
+
+.delete-btn {
+  background-color: #c62828;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-family: "Press Start 2P", cursive;
+  font-size: 9px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #b71c1c;
+}
+
+.view-btn {
+  background-color: #64b5f6;
+  border: none;
+  color: #000;
+  font-family: "Press Start 2P", cursive;
+  font-size: 9px;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.view-btn:hover {
+  background-color: #42a5f5;
+}
+
+.detail-page {
+  text-align: center;
+  padding: 20px;
+  font-family: "Press Start 2P", cursive;
+  color: #2e7d32;
+}
+
+.detail-image {
+  width: 200px;
+  height: 200px;
+  image-rendering: pixelated;
+  margin: 15px 0;
+}
+
+.detail-info {
+  background-color: #d7ccc8;
+  display: inline-block;
+  padding: 15px;
+  border: 4px solid #4e342e;
+  border-radius: 8px;
+  text-align: left;
+  font-size: 10px;
+  color: #000;
+}
+
+.detail-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.back-btn {
+  background-color: #aed581;
+  border: none;
+  color: #000;
+  font-family: "Press Start 2P", cursive;
+  font-size: 9px;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.back-btn:hover {
+  background-color: #9ccc65;
+}
